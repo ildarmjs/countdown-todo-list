@@ -1,0 +1,40 @@
+// main: ../../index.less
+.todo {
+	min-width: 500px;
+}
+.todo__task{
+	text-align: center;
+
+	position: relative;
+	.text {
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		h2, h3{
+			text-decoration: line-through;
+			color: green;
+
+		}
+		span {
+			text-decoration: none;
+			color: #000;
+			font-size: 12px;
+		}
+	}
+	.closeBtn {
+		position: absolute;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+	}
+}
+.complete {
+	
+	text-align: center;
+	border: 1px solid #000;
+	border-radius: 10px;
+	min-width: 500px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
